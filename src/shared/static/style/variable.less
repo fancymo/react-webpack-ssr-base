@@ -1,0 +1,111 @@
+// Variables
+//
+// Table of Contents
+//
+// Prefix
+// Colors
+// Font
+// Spacing
+// Options
+
+// Prefix
+// --------------------------------------
+@prefix: y_;
+
+// Colors
+// --------------------------------------
+// specific hex values.
+@white: #fff;
+@black: #000;
+@red: #d9534f;
+@orange: #f0ad4e;
+@yellow: #ffd500;
+@green: #5cb85c;
+@blue: #0275d8;
+@teal: #5bc0de;
+@pink: #ff5b77;
+@purple: #613d7c;
+
+// create grayscale
+@gray-dark: #292b2c;
+@gray: #464a4c;
+@gray-light: #636c72;
+@gray-lighter: #eceeef;
+@gray-lightest: #f7f7f9;
+
+// semantic color scheme
+@ui-primary: #16a085;
+@ui-success: @green;
+@ui-info: @teal;
+@ui-warning: @orange;
+@ui-danger: @red;
+@ui-inverse: @gray-dark;
+
+// theme color
+@ui-primary-active: #138b76;
+@ui-primary-hover: #4eb7a2;
+@ui-primary-disabled: #f7f7f7;
+@ui-primary-level00: #4eb7a2;
+@ui-primary-level01: #f3f7f7;
+
+// background color
+@ui-bg: #eee;
+
+// border color
+@border-primary-color: #a1a1a1;
+@border-secondary-color: #dfdfdf;
+@border-disabled-color: #eaeaea;
+
+// text color
+@text-primary-color: #333;
+@text-secondary-color: #9da0a7;
+@text-disabled-color: #d4d4d4;
+
+// font
+// --------------------------------------
+// font-family
+@font-family-default: -apple-system, "San Francisco", "Roboto", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Noto Sans", "Droid Sans Fallback", "Microsoft Yahei";
+
+// font size
+@font-size-default: 16px;
+@font-size-s: @font-size-default - 2px; // 14px
+@font-size-xs: @font-size-s - 2px; // 12px
+@font-size-xxs: @font-size-xs - 2px; // 10px
+@font-size-l: @font-size-default + 2px; // 18px
+@font-size-xl: @font-size-l + 2px; // 20px
+@font-size-xxl: @font-size-xl + 4px; // 24px
+
+// line height
+@line-height-default: 1.15; // 16px × 1.25 = 20px
+
+// Spacing
+// --------------------------------------
+//
+@space-default: 12px;
+@space-s: 4px;
+@space-l: 16px;
+
+
+// border radius
+@border-radius-default: 2px;
+
+// box shadow
+@box-shadow-default: 0 1px 2px rgba(0, 0, 0, .15);
+
+// 动画缓动公式和时间。
+// --------------------------------------
+@motion-func-default: ease-in-out;
+@motion-duration-default: 0.3s;
+
+// 媒体查询，移动设备优先
+// --------------------------------------
+// 超小屏幕（手机，小于 768px)
+// 小屏幕（平板，大于等于 768px）
+// 中等屏幕（桌面显示器，大于等于 992px）
+// 大屏幕（大桌面显示器，大于等于 1200px）
+@screen-xs-max: 768px;
+@screen-sm-min: 768px;
+@screen-sm-max: 992px;
+@screen-md-min: 992px;
+// @screen-md-max: 1200px;
+// @screen-lg-min: 1200px;

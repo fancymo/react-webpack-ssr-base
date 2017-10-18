@@ -1,0 +1,77 @@
+@import "./static/style/base.less";
+@import './static/font/iconfont.css';
+@import "./static/style/index.less";
+
+.@{prefix}app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .@{prefix}header_container {
+    height: 52px;
+    // .clearfix();
+  }
+}
+
+// 盒内布局，右对齐
+.@{prefix}align_right {
+  text-align: right;
+}
+
+.@{prefix}opt_bar {
+
+  .@{prefix}row {
+    div[class*=y_col] {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.@{prefix}card_wrapper {
+
+  & > .@{prefix}card_item {
+    display: inline-block;
+    margin-right: 16px;
+    width: e('calc((100% - 32px) / 3)');
+  }
+
+  & > .@{prefix}card_item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+// 内容部分底部固定位置
+.@{prefix}footer_fixed {
+  padding: 10px;
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, .15);
+  .sticky();
+  .text-overflow();
+
+  .@{prefix}btn {
+    margin-left: @space-default;
+  }
+
+  .@{prefix}text_item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.@{prefix}float_right {
+  float: right;
+}
+
+// 着重金额
+.@{prefix}money_important {
+  color: @red;
+  font-size: 24px;
+}
+
+.@{prefix}table {
+  .@{prefix}checkbox {
+    margin-bottom: @space-s;
+  }
+}
